@@ -1,85 +1,18 @@
-import Link from "next/link";
 import styles from "./homepage.module.css";
+import Featured from "./components/featured/Featured";
+import CategoryList from "./components/categoryList/CategoryList";
+import CardList from "./components/CardList/CardList";
+import Menu from "./components/menu/Menu";
 
 export default function Home() {
   return (
-    <div>
-      <Link href={"/"}>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-          mollitia laborum enim delectus deserunt sequi sed pariatur, ipsum eos
-          fugiat. In, a? Incidunt nostrum voluptate excepturi sunt eaque
-          consectetur consequuntur.
-        </h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, magni
-        esse, vitae porro quibusdam consectetur deserunt eum repudiandae aperiam
-        quae quas quo suscipit alias, vero vel voluptatum expedita quisquam.
-        Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Natus, magni esse, vitae porro quibusdam consectetur deserunt eum
-        repudiandae aperiam quae quas quo suscipit alias, vero vel voluptatum
-        expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Natus, magni esse, vitae porro quibusdam consectetur
-        deserunt eum repudiandae aperiam quae quas quo suscipit alias, vero vel
-        voluptatum expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Natus, magni esse, vitae porro quibusdam
-        consectetur deserunt eum repudiandae aperiam quae quas quo suscipit
-        alias, vero vel voluptatum expedita quisquam. Aspernatur. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Natus, magni esse, vitae
-        porro quibusdam consectetur deserunt eum repudiandae aperiam quae quas
-        quo suscipit alias, vero vel voluptatum expedita quisquam. Aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, magni
-        esse, vitae porro quibusdam consectetur deserunt eum repudiandae aperiam
-        quae quas quo suscipit alias, vero vel voluptatum expedita quisquam.
-        Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Natus, magni esse, vitae porro quibusdam consectetur deserunt eum
-        repudiandae aperiam quae quas quo suscipit alias, vero vel voluptatum
-        expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Natus, magni esse, vitae porro quibusdam consectetur
-        deserunt eum repudiandae aperiam quae quas quo suscipit alias, vero vel
-        voluptatum expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Natus, magni esse, vitae porro quibusdam
-        consectetur deserunt eum repudiandae aperiam quae quas quo suscipit
-        alias, vero vel voluptatum expedita quisquam. Aspernatur. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Natus, magni esse, vitae
-        porro quibusdam consectetur deserunt eum repudiandae aperiam quae quas
-        quo suscipit alias, vero vel voluptatum expedita quisquam. Aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, magni
-        esse, vitae porro quibusdam consectetur deserunt eum repudiandae aperiam
-        quae quas quo suscipit alias, vero vel voluptatum expedita quisquam.
-        Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Natus, magni esse, vitae porro quibusdam consectetur deserunt eum
-        repudiandae aperiam quae quas quo suscipit alias, vero vel voluptatum
-        expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Natus, magni esse, vitae porro quibusdam consectetur
-        deserunt eum repudiandae aperiam quae quas quo suscipit alias, vero vel
-        voluptatum expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Natus, magni esse, vitae porro quibusdam
-        consectetur deserunt eum repudiandae aperiam quae quas quo suscipit
-        alias, vero vel voluptatum expedita quisquam. Aspernatur. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Natus, magni esse, vitae
-        porro quibusdam consectetur deserunt eum repudiandae aperiam quae quas
-        quo suscipit alias, vero vel voluptatum expedita quisquam. Aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, magni
-        esse, vitae porro quibusdam consectetur deserunt eum repudiandae aperiam
-        quae quas quo suscipit alias, vero vel voluptatum expedita quisquam.
-        Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Natus, magni esse, vitae porro quibusdam consectetur deserunt eum
-        repudiandae aperiam quae quas quo suscipit alias, vero vel voluptatum
-        expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Natus, magni esse, vitae porro quibusdam consectetur
-        deserunt eum repudiandae aperiam quae quas quo suscipit alias, vero vel
-        voluptatum expedita quisquam. Aspernatur. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Natus, magni esse, vitae porro quibusdam
-        consectetur deserunt eum repudiandae aperiam quae quas quo suscipit
-        alias, vero vel voluptatum expedita quisquam. Aspernatur. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Natus, magni esse, vitae
-        porro quibusdam consectetur deserunt eum repudiandae aperiam quae quas
-        quo suscipit alias, vero vel voluptatum expedita quisquam. Aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, magni
-        esse, vitae porro quibusdam consectetur deserunt eum repudiandae aperiam
-        quae quas quo suscipit alias, vero vel voluptatum expedita quisquam.
-        Aspernatur.
-      </Link>
+    <div className={styles.container}>
+      <Featured />
+      <CategoryList />
+      <div className={styles.content}>
+        <CardList />
+        <Menu />
+      </div>
     </div>
   );
 }
